@@ -1,5 +1,5 @@
 //https://stackoverflow.com/questions/23064247/java-mergesort-with-strings
-package org.example;
+package org.example.main;
 import java.util.Arrays;
 
 public class MergeSortStrings {

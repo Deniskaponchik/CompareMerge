@@ -1,9 +1,8 @@
-package org.example;
+package org.example.main;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 public class Solution1 {
     // task1527
