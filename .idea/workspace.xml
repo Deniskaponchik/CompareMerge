@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df49331-c45f-44af-83ef-90847371ec37" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/int1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/int2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/int3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/str1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/str2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/str3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ApacheCommonsCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/ApacheCommonsCli.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Jcommander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Jcommander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MergeSortInt2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortInt2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MergeSortStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/Solution1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Solution2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/Solution2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/ApacheCommonsCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/ApacheCommonsCli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
     <configuration name="Main" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="org.example.main.Main" />
       <module name="CompareMerge" />
-      <option name="PROGRAM_PARAMETERS" value="-out=result.txt -i=int1.txt -a" />
+      <option name="PROGRAM_PARAMETERS" value="-out=result.txt -s=str1.txt,str2.txt -a" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,21 +117,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
