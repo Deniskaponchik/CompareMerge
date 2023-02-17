@@ -1,15 +1,21 @@
-package org.example.main;
+package org.example.backup;
 
 import org.apache.commons.cli.CommandLine;
+import org.example.main.ApacheCommonsCli;
+import org.example.main.MergeSortInt2;
+import org.example.main.MergeSortStrings;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) throws Exception {
-        CommandLine cmd = ApacheCommonsCli.getCmd(args);
+        CommandLine cmd = org.example.main.ApacheCommonsCli.getCmd(args);
         //System.out.println(ApacheCommonsCli.getSortType(cmd));
-        String[] filesNames = ApacheCommonsCli.getFilePaths(cmd);
+        String[] filesNames = org.example.main.ApacheCommonsCli.getFilePaths(cmd);
 
         ArrayList<Integer> unsoredIntArrList = new ArrayList<>();
         ArrayList<String> unsoredStrArrList = new ArrayList<>();
@@ -59,58 +65,30 @@ public class Main {
         //System.out.println(unsoredIntArr.toString());
 
 
-        //FileOutputStream out = new FileOutputStream("the-file-name");
-        //FileOutputStream out = new FileOutputStream(ApacheCommonsCli.getOutFilePath(cmd));
-        BufferedWriter outputWriter = null;
-        //outputWriter = new BufferedWriter(new FileWriter(ApacheCommonsCli.getOutFilePath(cmd)));
-        outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
-        try {
-            //ОТСОРТИРОВАТЬ
-            if (cmd.hasOption("i")) {
-                int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();
-                if (ApacheCommonsCli.getSortType(cmd)) {
-                    int[] sortedIntArr = MergeSortInt2.sortAsc(unsortedIntArr);
-                    //System.out.println(Arrays.toString(sortedIntArr));
-                    for (int i = 0; i < sortedIntArr.length; i++) {
-                        outputWriter.write(Integer.toString(sortedIntArr[i]));
-                        outputWriter.newLine();
-                    }
-                } else {
-                    int[] sortedIntArr = MergeSortInt2.sortDes(unsortedIntArr);
-                    //System.out.println(Arrays.toString(sortedIntArr));
-                    for (int i = 0; i < sortedIntArr.length; i++) {
-                        outputWriter.write(Integer.toString(sortedIntArr[i]));
-                        outputWriter.newLine();
-                    }
-                }
-
-
-
-
+        //ОТСОРТИРОВАТЬ
+        if(cmd.hasOption("i")) {
+            int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();
+            if(org.example.main.ApacheCommonsCli.getSortType(cmd)) {
+                int[] sortedIntArr = org.example.main.MergeSortInt2.sortAsc(unsortedIntArr);
+                System.out.println(Arrays.toString(sortedIntArr));
+                //ОТПРАВИТЬ В ИТОГОВЫЙ ФАЙЛ
             } else {
-                String[] unsortedStrArr = unsoredStrArrList.toArray(new String[unsoredStrArrList.size()]);
-                if (ApacheCommonsCli.getSortType(cmd)) {
-                    String[] sortedStrArr = MergeSortStrings.getAscSortedStrArr(unsortedStrArr);
-                    //System.out.println(Arrays.toString(sortedStrArr));
-                    for (int i = 0; i < sortedStrArr.length; i++) {
-                        outputWriter.write(sortedStrArr[i]+"");
-                        outputWriter.newLine();
-                    }
-                } else {
-                    String[] sortedStrArr = MergeSortStrings.getDesSortedStrArr(unsortedStrArr);
-                    //System.out.println(Arrays.toString(sortedStrArr));
-                    for (int i = 0; i < sortedStrArr.length; i++) {
-                        outputWriter.write(sortedStrArr[i]+"");
-                        outputWriter.newLine();
-                    }
-                }
+                int[] sortedIntArr = MergeSortInt2.sortDes(unsortedIntArr);
+                System.out.println(Arrays.toString(sortedIntArr));
+                //ОТПРАВИТЬ В ИТОГОВЫЙ ФАЙЛ
             }
-        } catch (Exception e) {
-            System.out.println("не удалось записать данные в итоговый файл");
-        } finally {
-            //out.close();
-            outputWriter.flush();
-            outputWriter.close();
+        }
+        else {
+            String[] unsortedStrArr = unsoredStrArrList.toArray(new String[unsoredStrArrList.size()]);
+            if(ApacheCommonsCli.getSortType(cmd)) {
+                String[] sortedStrArr = org.example.main.MergeSortStrings.getAscSortedStrArr(unsortedStrArr);
+                System.out.println(Arrays.toString(sortedStrArr));
+                //ОТПРАВИТЬ В ИТОГОВЫЙ ФАЙЛ
+            } else {
+                String[] sortedStrArr = MergeSortStrings.getDesSortedStrArr(unsortedStrArr);
+                System.out.println(Arrays.toString(sortedStrArr));
+                //ОТПРАВИТЬ В ИТОГОВЫЙ ФАЙЛ
+            }
         }
         /*
         String[] unsortedStrArr = unsoredStrArrList.toArray(new String[unsoredStrArrList.size()]);

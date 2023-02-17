@@ -2,7 +2,7 @@
 package org.example.main;
 
 public class MergeSortStrings {
-    /* рабочий код. не трогать
+    /* рабочий код. не изменять
     public static void main(String[] args) {
         //String[] values = {"foo", "bar", "alice", "bob", "celine", "david"};
         String[] values = {"Петя", "Маша", "Катя", "Женя", "Саня", "Алишер"};
@@ -11,9 +11,13 @@ public class MergeSortStrings {
     }  */
 
     public static String[] getAscSortedStrArr(String[] values) {
+    //public static String[] getAscSortedStrArr(ArrayList<String> values) {
         //String[] values = {"foo", "bar", "alice", "bob", "celine", "david"};
         //String[] values = {"Петя", "Маша", "Катя", "Женя", "Саня", "Алишер"};
+
         mergeSortAsc(values, 0, values.length - 1);
+        //mergeSortAsc(values, 0, values.size() - 1);
+
         //System.out.println("Result " + Arrays.toString(values));
         return values;
     }
@@ -28,7 +32,6 @@ public class MergeSortStrings {
         mergeSortAsc(a, from, mid);
         mergeSortAsc(a, mid + 1, to);
         mergeAsc(a, from, mid, to);
-
        // return a; /// ????
     }
     public static void mergeAsc(String[] a, int from, int mid, int to) {
