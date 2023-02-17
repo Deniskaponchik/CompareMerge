@@ -2,8 +2,8 @@
 //https://commons.apache.org/proper/commons-cli/
 
 package org.example.backup;
+
 import org.apache.commons.cli.*;
-import org.example.main.MergeSortInt2;
 
 import java.util.Arrays;
 
@@ -112,9 +112,10 @@ public class ApacheCommonsCli {
 
 
 
-
+/*
         int [] result = new int[]{4,3,1,4,5,7,8,9,0,11,22};
         System.out.println(Arrays.toString(MergeSortInt2.sort(result)));
+ */
 
     }
 

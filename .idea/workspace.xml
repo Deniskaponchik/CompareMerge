@@ -5,18 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df49331-c45f-44af-83ef-90847371ec37" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/int1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/int2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/int3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/str1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/str2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/str3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortInt2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortStrings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/ApacheCommonsCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/ApacheCommonsCli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Max.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/MinFrom5numbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Sort0622.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortInt2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortInt2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/int1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/int1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/ApacheCommonsCli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/ApacheCommonsCli.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/Max.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/MinFrom5numbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/Sort0622.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/ApacheCommonsCli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/ApacheCommonsCli.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortInt2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortInt2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
