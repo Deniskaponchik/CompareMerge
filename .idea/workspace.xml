@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df49331-c45f-44af-83ef-90847371ec37" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Main2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/int3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/int3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/str1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/str1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/str2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/str2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/str3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/str3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortStrings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-cli/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
