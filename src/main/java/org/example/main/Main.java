@@ -18,7 +18,8 @@ public class Main {
 
             try { //пытаемся получить файлы из текущей директории
                 //File file = new File(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + fp);
-                File file = new File(System.getProperty("user.dir")+fp);
+                File file = new File(System.getProperty("user.dir")+"\\"+fp);
+                System.out.println(file.toString());
                 FileReader fr = new FileReader(file);
                 BufferedReader br = new BufferedReader(fr);
                 String line;
@@ -61,7 +62,7 @@ public class Main {
         BufferedWriter outputWriter = null;
         //outputWriter = new BufferedWriter(new FileWriter(ApacheCommonsCli.getOutFilePath(cmd)));
         //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
-        outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + ApacheCommonsCli.getOutFilePath(cmd)));
+        outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" +ApacheCommonsCli.getOutFilePath(cmd)));
         try {
             if (cmd.hasOption("i")) {
                 int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();

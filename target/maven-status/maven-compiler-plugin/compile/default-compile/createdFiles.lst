@@ -7,10 +7,10 @@ org\example\main\ApacheCommonsCli.class
 org\example\main\Main.class
 org\example\main\MergeSortInt2.class
 org\example\backup\BubbleSortInt.class
-org\example\main\Solution2.class
-org\example\main\Solution1.class
+org\example\backup\Solution1.class
 org\example\backup\MergeSortStrings.class
 org\example\backup\ApacheCommonsCli.class
+org\example\backup\Solution2.class
 org\example\backup\Main.class
 org\example\backup\Main1.class
 org\example\backup\Main2.class
