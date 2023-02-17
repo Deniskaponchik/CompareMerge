@@ -1,6 +1,6 @@
 package org.example.main;
+
 import org.apache.commons.cli.*;
-import java.util.Arrays;
 
 public class ApacheCommonsCli {
 
@@ -87,13 +87,13 @@ public class ApacheCommonsCli {
               //String integerFilePath = cmd.getOptionValue("i");
               String[] integerFilePath = cmd.getOptionValues("i");
               //System.out.println("Integer " + integerFilePath);
-              System.out.println(Arrays.toString(integerFilePath));
+              //System.out.println(Arrays.toString(integerFilePath));
               return integerFilePath;
           } else {
               //String stringFilePath = cmd.getOptionValue("s");
               String[] stringFilePath = cmd.getOptionValues("s");
               //System.out.println("String " + stringFilePath);
-              System.out.println(Arrays.toString(stringFilePath));
+              //System.out.println(Arrays.toString(stringFilePath));
               return stringFilePath;
           }
     }

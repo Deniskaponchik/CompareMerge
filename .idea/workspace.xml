@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df49331-c45f-44af-83ef-90847371ec37" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortInt2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortStrings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/ApacheCommonsCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/ApacheCommonsCli.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Max.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/MinFrom5numbers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Sort0622.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortInt2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortInt2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/int1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/int1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/ApacheCommonsCli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/ApacheCommonsCli.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/Max.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/MinFrom5numbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/Sort0622.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/int2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/int2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/ApacheCommonsCli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/ApacheCommonsCli.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortInt2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortInt2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortStrings.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,17 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Clouds/Mega/Work/Learning/1.IT/Coding/Java/CompareMerge&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "F:/Clouds/Mega/Work/Learning/1.IT/Coding/Java/JavaCode",
+    "settings.editor.selected.configurable": "settings.sync"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.backup1" />
       <recent name="org.example.backup" />
     </key>
   </component>
@@ -86,7 +75,7 @@
     <configuration name="Main" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="org.example.main.Main" />
       <module name="CompareMerge" />
-      <option name="PROGRAM_PARAMETERS" value="-out=result.txt -s=str1.txt,str2.txt -a" />
+      <option name="PROGRAM_PARAMETERS" value="-out=result.txt -i=int1.txt,int2.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

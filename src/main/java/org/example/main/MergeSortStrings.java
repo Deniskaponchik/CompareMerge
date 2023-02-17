@@ -1,6 +1,5 @@
 //https://stackoverflow.com/questions/23064247/java-mergesort-with-strings
 package org.example.main;
-import java.util.Arrays;
 
 public class MergeSortStrings {
     /* рабочий код. не трогать
@@ -11,17 +10,18 @@ public class MergeSortStrings {
         System.out.println("Result " + Arrays.toString(values));
     }  */
 
-    public static void main(String[] args) {
+    public static String[] getAscSortedStrArr(String[] values) {
         //String[] values = {"foo", "bar", "alice", "bob", "celine", "david"};
-        String[] values = {"Петя", "Маша", "Катя", "Женя", "Саня", "Алишер"};
+        //String[] values = {"Петя", "Маша", "Катя", "Женя", "Саня", "Алишер"};
         mergeSortAsc(values, 0, values.length - 1);
-        System.out.println("Result " + Arrays.toString(values));
+        //System.out.println("Result " + Arrays.toString(values));
+        return values;
     }
 
-    public static String[] mergeSortAsc(String[] a, int from, int to) {
+    public static void mergeSortAsc(String[] a, int from, int to) {
         if (from == to) {
-            //return;
-            return a; // ??? ПОДУМАТЬ, правильно ли
+            return;
+            //return a; // ??? ПОДУМАТЬ, правильно ли
         }
         int mid = (from + to) / 2;
         // sort the first and the second half
@@ -29,7 +29,7 @@ public class MergeSortStrings {
         mergeSortAsc(a, mid + 1, to);
         mergeAsc(a, from, mid, to);
 
-        return null; /// ????
+       // return a; /// ????
     }
     public static void mergeAsc(String[] a, int from, int mid, int to) {
         int n = to - from + 1;       // size of the range to be merged
@@ -72,7 +72,13 @@ public class MergeSortStrings {
 
 
 
-
+    public static String[] getDesSortedStrArr(String[] values) {
+        //String[] values = {"foo", "bar", "alice", "bob", "celine", "david"};
+        //String[] values = {"Петя", "Маша", "Катя", "Женя", "Саня", "Алишер"};
+        mergeSortDes(values, 0, values.length - 1);
+        //System.out.println("Result " + Arrays.toString(values));
+        return values;
+    }
     public static void mergeSortDes(String[] a, int from, int to) {
         if (from == to) {
             return;
