@@ -38,7 +38,7 @@ public class ApacheCommonsCli {
           options.addOptionGroup(fileTypeOptGroup);
 
 
-          Option outputOpt = new Option("out", "output", true, "output file path");
+          Option outputOpt = new Option("o", "output", true, "output file path");
           outputOpt.setRequired(true);
           outputOpt.setOptionalArg(true);
           options.addOption(outputOpt);

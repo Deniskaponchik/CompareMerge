@@ -6,7 +6,7 @@
 
     <groupId>org.example.main</groupId>
     <artifactId>CompareMerge</artifactId>
-    <version>v0.1</version>
+    <version>v0.2</version>
     <packaging>jar</packaging>
 
     <properties>

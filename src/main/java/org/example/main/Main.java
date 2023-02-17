@@ -17,6 +17,7 @@ public class Main {
             String fileName = fp;
 
             try { //пытаемся получить файлы из текущей директории
+                System.out.println(" ");
                 //File file = new File(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + fp);
                 File file = new File(System.getProperty("user.dir")+"\\"+fp);
                 System.out.println(file.toString());
@@ -57,6 +58,7 @@ public class Main {
         //System.out.println(unsoredIntArr.toString());
 
 
+        System.out.println(" ");
         //FileOutputStream out = new FileOutputStream("the-file-name");
         //FileOutputStream out = new FileOutputStream(ApacheCommonsCli.getOutFilePath(cmd));
         BufferedWriter outputWriter = null;

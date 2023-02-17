@@ -7,13 +7,16 @@
     <list default="true" id="9df49331-c45f-44af-83ef-90847371ec37" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/BubbleSortInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/QsortInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/QuickSortInt.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Solution1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/Solution2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Solution2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CompareMerge-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CompareMerge-v0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Merge-v0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/BubbleSortInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/QsortInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/QuickSortInt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/Solution1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/Solution2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
