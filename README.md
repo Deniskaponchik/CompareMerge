@@ -1,4 +1,5 @@
 ## MergeSort
+Сортировка слиянием файлов со строковыми или целочисленными массивами
 ### Для запуска
 1. Скачать на компьютер папку [RunMe](https://github.com/Deniskaponchik/CompareMerge/tree/master/RunMe)
 2. Должна быть установлена Java на ПК и прописана переменная окружения %JAVA_HOME% для Windows
@@ -32,3 +33,10 @@
 
 Для файлов со строками. Сортировка по убыванию:
 ![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrDes.PNG)
+
+### Реализация
+Java 19
+[Maven 4.0.0](https://github.com/Deniskaponchik/CompareMerge/blob/master/pom.xml)
+* commons-io
+* maven-assembly-plugin
+
