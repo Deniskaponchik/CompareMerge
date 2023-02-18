@@ -9,18 +9,20 @@ public class Main {
         //System.out.println(ApacheCommonsCli.getSortType(cmd));
         String[] filesNames = ApacheCommonsCli.getFilePaths(cmd);
 
+
         ArrayList<Integer> unsoredIntArrList = new ArrayList<>();
         ArrayList<String> unsoredStrArrList = new ArrayList<>();
 
         for (String fp : filesNames) {
-            //String fileName = "/Users/pankaj/source.txt";
-            String fileName = fp;
+            //String fileName = "/Users/admin/source.txt";
+            //String fileName = fp;
 
             try { //пытаемся получить файлы из текущей директории
                 System.out.println(" ");
                 //File file = new File(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + fp);
                 File file = new File(System.getProperty("user.dir")+"\\"+fp);
                 System.out.println(file.toString());
+
                 FileReader fr = new FileReader(file);
                 BufferedReader br = new BufferedReader(fr);
                 String line;
@@ -42,13 +44,13 @@ public class Main {
                                 unsoredStrArrList.add(line);
                             }
                         }
-
                     }
-                    //close resources
-                    br.close();
-                    fr.close();
+
                 } catch (Exception e) {
                     System.out.println("Не удалось прочитать файл");
+                } finally {
+                    br.close();
+                    fr.close();
                 }
             } catch (Exception e) {
                 System.out.println("не удалось получить файлы");
@@ -59,24 +61,21 @@ public class Main {
 
 
         System.out.println(" ");
-        //FileOutputStream out = new FileOutputStream("the-file-name");
-        //FileOutputStream out = new FileOutputStream(ApacheCommonsCli.getOutFilePath(cmd));
         BufferedWriter outputWriter = null;
-        //outputWriter = new BufferedWriter(new FileWriter(ApacheCommonsCli.getOutFilePath(cmd)));
         //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
         outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" +ApacheCommonsCli.getOutFilePath(cmd)));
         try {
             if (cmd.hasOption("i")) {
                 int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();
                 if (ApacheCommonsCli.getSortType(cmd)) {
-                    int[] sortedIntArr = MergeSortInt2.sortAsc(unsortedIntArr);
+                    int[] sortedIntArr = MergeSortInt.sortAsc(unsortedIntArr);
                     //System.out.println(Arrays.toString(sortedIntArr));
                     for (int i = 0; i < sortedIntArr.length; i++) {
                         outputWriter.write(Integer.toString(sortedIntArr[i]));
                         outputWriter.newLine();
                     }
                 } else {
-                    int[] sortedIntArr = MergeSortInt2.sortDes(unsortedIntArr);
+                    int[] sortedIntArr = MergeSortInt.sortDes(unsortedIntArr);
                     //System.out.println(Arrays.toString(sortedIntArr));
                     for (int i = 0; i < sortedIntArr.length; i++) {
                         outputWriter.write(Integer.toString(sortedIntArr[i]));
@@ -116,8 +115,8 @@ public class Main {
         //System.out.println(unsortedIntArr.toString());
         //System.out.println(unsortedStrArr.toString());
 
-        String[] sortedStrArr = MergeSortStrings.getAscSortedStrArr(unsortedStrArr);
-        int[] sortedIntArr = MergeSortInt2.sortAsc(unsortedIntArr);
+        String[] sortedStrArr = MergeSortStrings_01.getAscSortedStrArr(unsortedStrArr);
+        int[] sortedIntArr = MergeSortInt_02.sortAsc(unsortedIntArr);
 
         System.out.println(Arrays.toString(sortedIntArr));
         System.out.println(Arrays.toString(sortedStrArr));

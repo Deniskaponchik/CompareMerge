@@ -2,7 +2,7 @@
 package org.example.backup;
 import java.util.Arrays;
 
-public class MergeSortStrings {
+public class MergeSortStrings_01 {
     public static void main(String[] args) {
         //String[] values = {"foo", "bar", "alice", "bob", "celine", "david"};
         String[] values = {"Петя", "Маша", "Катя", "Женя", "Саня", "Алишер"};

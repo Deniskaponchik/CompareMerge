@@ -3,7 +3,7 @@
 package org.example.backup;
 import java.util.Arrays;
 
-public class MergeSortInt2 {
+public class MergeSortInt_02 {
     //public int [] result;
     /*
     public static void main(String[] args) {

@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        //ApacheCommonsCli.getSum(String[] args);
+        //ApacheCommonsCli_01.getSum(String[] args);
         Options options = new Options();
 
         Option integerFilesOpt = new Option("i", "integer", true, "integer file path");
@@ -113,7 +113,7 @@ public class Main {
 
 /*
         int [] result = new int[]{4,3,1,4,5,7,8,9,0,11,22};
-        System.out.println(Arrays.toString(MergeSortInt2.sort(result)));
+        System.out.println(Arrays.toString(MergeSortInt_02.sort(result)));
 
  */
     }

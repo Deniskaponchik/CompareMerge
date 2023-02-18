@@ -5,9 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example.main</groupId>
-    <artifactId>CompareMerge</artifactId>
-    <version>v0.2</version>
+    <artifactId>MergeSort</artifactId>
+    <version>v0.3</version>
     <packaging>jar</packaging>
+
+    <name>Merge Sort</name>
+    <url>https://github.com/Deniskaponchik/CompareMerge</url>
+    <developers>
+        <developer>
+            <id>deniskaponchik</id>
+            <name>Denis Tirskikh</name>
+            <email>deniskaponchik@gmail.com</email>
+        </developer>
+    </developers>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>

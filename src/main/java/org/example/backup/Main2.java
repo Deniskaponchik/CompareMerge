@@ -2,7 +2,7 @@ package org.example.backup;
 
 import org.apache.commons.cli.CommandLine;
 import org.example.main.ApacheCommonsCli;
-import org.example.main.MergeSortInt2;
+import org.example.main.MergeSortInt;
 import org.example.main.MergeSortStrings;
 
 import java.io.BufferedReader;
@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class Main2 {
     public static void main(String[] args) throws Exception {
         CommandLine cmd = org.example.main.ApacheCommonsCli.getCmd(args);
-        //System.out.println(ApacheCommonsCli.getSortType(cmd));
+        //System.out.println(ApacheCommonsCli_01.getSortType(cmd));
         String[] filesNames = org.example.main.ApacheCommonsCli.getFilePaths(cmd);
 
         ArrayList<Integer> unsoredIntArrList = new ArrayList<>();
@@ -69,11 +69,11 @@ public class Main2 {
         if(cmd.hasOption("i")) {
             int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();
             if(org.example.main.ApacheCommonsCli.getSortType(cmd)) {
-                int[] sortedIntArr = org.example.main.MergeSortInt2.sortAsc(unsortedIntArr);
+                int[] sortedIntArr = MergeSortInt.sortAsc(unsortedIntArr);
                 System.out.println(Arrays.toString(sortedIntArr));
                 //ОТПРАВИТЬ В ИТОГОВЫЙ ФАЙЛ
             } else {
-                int[] sortedIntArr = MergeSortInt2.sortDes(unsortedIntArr);
+                int[] sortedIntArr = MergeSortInt.sortDes(unsortedIntArr);
                 System.out.println(Arrays.toString(sortedIntArr));
                 //ОТПРАВИТЬ В ИТОГОВЫЙ ФАЙЛ
             }
@@ -97,8 +97,8 @@ public class Main2 {
         //System.out.println(unsortedIntArr.toString());
         //System.out.println(unsortedStrArr.toString());
 
-        String[] sortedStrArr = MergeSortStrings.getAscSortedStrArr(unsortedStrArr);
-        int[] sortedIntArr = MergeSortInt2.sortAsc(unsortedIntArr);
+        String[] sortedStrArr = MergeSortStrings_01.getAscSortedStrArr(unsortedStrArr);
+        int[] sortedIntArr = MergeSortInt_02.sortAsc(unsortedIntArr);
 
         System.out.println(Arrays.toString(sortedIntArr));
         System.out.println(Arrays.toString(sortedStrArr));
@@ -113,11 +113,11 @@ public class Main2 {
 
 
         /*
-        if(ApacheCommonsCli.getSortType(cmd) && cmd.hasOption("i")) {
+        if(ApacheCommonsCli_01.getSortType(cmd) && cmd.hasOption("i")) {
             int[] result = new int[]{4, 3, 1, 4, 5, 7, 8, 9, 0, 11, 22};
-            System.out.println(Arrays.toString(MergeSortInt2.sortAsc(result)));
+            System.out.println(Arrays.toString(MergeSortInt_02.sortAsc(result)));
 
-            String[] intFiles = ApacheCommonsCli.getFilePaths(cmd);
+            String[] intFiles = ApacheCommonsCli_01.getFilePaths(cmd);
             for (String fp : intFiles) {
                 //String fileName = "/Users/pankaj/source.txt";
                 String fileName = fp;
@@ -137,24 +137,24 @@ public class Main2 {
         }
 
 
-        else if(!ApacheCommonsCli.getSortType(cmd) && cmd.hasOption("i")){
+        else if(!ApacheCommonsCli_01.getSortType(cmd) && cmd.hasOption("i")){
             int[] result = new int[]{4, 3, 1, 4, 5, 7, 8, 9, 0, 11, 22};
-            System.out.println(Arrays.toString(MergeSortInt2.sortDes(result)));
+            System.out.println(Arrays.toString(MergeSortInt_02.sortDes(result)));
         }
-        else if(ApacheCommonsCli.getSortType(cmd) && cmd.hasOption("s")){
+        else if(ApacheCommonsCli_01.getSortType(cmd) && cmd.hasOption("s")){
             //String[] values = {"foo", "bar", "alice", "bob", "celine", "david"};
             String[] values = {"Петя", "Маша", "Катя", "Женя", "Саня", "Алишер"};
-            //MergeSortStrings.mergeSortAsc(values, 0, values.length - 1);
+            //MergeSortStrings_01.mergeSortAsc(values, 0, values.length - 1);
             //System.out.println("Result " + Arrays.toString(values));
-            System.out.println(Arrays.toString(MergeSortStrings.getAscSortedStrArr(values)));
+            System.out.println(Arrays.toString(MergeSortStrings_01.getAscSortedStrArr(values)));
             System.out.println("Сработала именно эта ветка");
         }
         else {
             //String[] values = {"foo", "bar", "alice", "bob", "celine", "david"};
             String[] values = {"Петя", "Маша", "Катя", "Женя", "Саня", "Алишер"};
-            //MergeSortStrings.mergeSortAsc(values, 0, values.length - 1);
+            //MergeSortStrings_01.mergeSortAsc(values, 0, values.length - 1);
             //System.out.println("Result " + Arrays.toString(values));
-            System.out.println(Arrays.toString(MergeSortStrings.getDesSortedStrArr(values)));
+            System.out.println(Arrays.toString(MergeSortStrings_01.getDesSortedStrArr(values)));
             System.out.println("Сработала НЕ эта ветка");
         }
         */

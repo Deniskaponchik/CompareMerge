@@ -1,6 +1,6 @@
 //https://javarush.com/groups/posts/1997-algoritmih-sortirovki-v-teorii-i-na-praktike
 package org.example.backup;
-public class MergeSortInt {
+public class MergeSortInt_01 {
 
     /*
     public static void mergeSort(int[] source, int left, int right) {

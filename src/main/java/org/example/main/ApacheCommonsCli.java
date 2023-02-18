@@ -12,7 +12,7 @@ public class ApacheCommonsCli {
 
     //public static void main(String[] args) throws Exception {
       public static CommandLine getCmd(String[] args) {
-          //ApacheCommonsCli.getSum(String[] args);
+          //ApacheCommonsCli_01.getSum(String[] args);
           Options options = new Options();
 
           Option integerFilesOpt = new Option("i", "integer", true, "integer file path");

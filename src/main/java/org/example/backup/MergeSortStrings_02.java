@@ -1,6 +1,6 @@
-package org.example.main;
+package org.example.backup;
 
-public class MergeSortStrings {
+public class MergeSortStrings_02 {
 
     public static String[] getAscSortedStrArr(String[] values) {
         mergeSortAsc(values, 0, values.length - 1);
@@ -27,7 +27,6 @@ public class MergeSortStrings {
         // as long as neither i1 nor i2 past the end, move the smaller into b
         while (i1 <= mid && i2 <= to) {
             if (a[i1].compareTo(a[i2]) < 0) {
-          //if (a[i2].compareTo(a[i1]) < 0) {  //для обратной сортировки
                 b[j] = a[i1];
                 i1++;
             } else {
@@ -36,7 +35,8 @@ public class MergeSortStrings {
             }
             j++;
         }
-        // note that only one of the two while loops below is executed. copy any remaining entries of the first half
+        // note that only one of the two while loops below is executed
+        // copy any remaining entries of the first half
         while (i1 <= mid) {
             b[j] = a[i1];
             i1++;

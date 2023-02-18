@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df49331-c45f-44af-83ef-90847371ec37" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/png/IntAsc.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/png/IntAsc.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortStrings_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/ApacheCommonsCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/ApacheCommonsCli_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Jcommander.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Main1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortInt_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortInt2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortInt_02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortStrings_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Solution1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/backup/Solution2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/ApacheCommonsCli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortInt2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/backup/MergeSortInt_03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortInt2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortInt2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortStrings.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +89,7 @@
     <configuration name="Main" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="org.example.main.Main" />
       <module name="CompareMerge" />
-      <option name="PROGRAM_PARAMETERS" value="-out=result.txt -s=str1.txt,str2.txt,str3.txt" />
+      <option name="PROGRAM_PARAMETERS" value="-o=result.txt -s=str1.txt,str2.txt,str3.txt -d" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
