@@ -9,7 +9,6 @@ public class Main {
         //System.out.println(ApacheCommonsCli.getSortType(cmd));
         String[] filesNames = ApacheCommonsCli.getFilePaths(cmd);
 
-
         ArrayList<Integer> unsoredIntArrList = new ArrayList<>();
         ArrayList<String> unsoredStrArrList = new ArrayList<>();
 
@@ -19,8 +18,15 @@ public class Main {
 
             try { //пытаемся получить файлы из текущей директории
                 System.out.println(" ");
-                //File file = new File(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + fp);
-                File file = new File(System.getProperty("user.dir")+"\\"+fp);
+
+                File file;
+                if(isDevelopmentEnvironment()) { //проверка на запуск кода в IDEA или нет
+                    //File file = new File(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + fp);
+                    file = new File(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + fp);
+                } else {
+                    //File file = new File(System.getProperty("user.dir") + "\\" + fp);
+                    file = new File(System.getProperty("user.dir") + "\\" + fp);
+                }
                 System.out.println(file.toString());
 
                 FileReader fr = new FileReader(file);
@@ -61,9 +67,15 @@ public class Main {
 
 
         System.out.println(" ");
-        BufferedWriter outputWriter = null;
-        //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
-        outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" +ApacheCommonsCli.getOutFilePath(cmd)));
+        //BufferedWriter outputWriter = null;
+        BufferedWriter outputWriter;
+        if(isDevelopmentEnvironment()) { //проверка на запуск в IDEA или нет
+            //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
+            outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
+        } else {
+            //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" +ApacheCommonsCli.getOutFilePath(cmd)));
+            outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" + ApacheCommonsCli.getOutFilePath(cmd)));
+        }
         try {
             if (cmd.hasOption("i")) {
                 int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();
@@ -123,6 +135,15 @@ public class Main {
          */
 
 
+    }
+
+    //проверка на запуск кода в IDEA или нет
+    public static boolean isDevelopmentEnvironment() {
+        boolean isIDEA = true;
+        if (System.getenv("isIDEA") == null) {
+            isIDEA = false;
+        }
+        return isIDEA;
     }
 
 

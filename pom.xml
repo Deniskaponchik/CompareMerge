@@ -6,7 +6,7 @@
 
     <groupId>org.example.main</groupId>
     <artifactId>MergeSort</artifactId>
-    <version>v0.3</version>
+    <version>v0.5</version>
     <packaging>jar</packaging>
 
     <name>Merge Sort</name>
