@@ -35,7 +35,7 @@
 ![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrDes.PNG)
 
 ### Реализация
-Java 19
+Java 19 <br />
 [Maven 4.0.0](https://github.com/Deniskaponchik/CompareMerge/blob/master/pom.xml)
 * commons-io
 * maven-assembly-plugin
