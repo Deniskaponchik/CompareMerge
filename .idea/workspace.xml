@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9df49331-c45f-44af-83ef-90847371ec37" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MergeSort-0.5-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MergeSort-0.5-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MergeSort-0.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MergeSort-0.5.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MergeSort.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/MergeSort.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MergeSortPNG.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
