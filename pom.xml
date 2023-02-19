@@ -106,11 +106,12 @@
                                 <maxHeapPercent>80</maxHeapPercent>
                             </jre>
                             <versionInfo>
-                                <fileVersion>0.0.0.0</fileVersion>
+                                <fileVersion>0.0</fileVersion>
                                 <txtFileVersion>${project.version}</txtFileVersion>
-                                <fileDescription>MergeSort-${project.version}</fileDescription>
+                                <!--fileDescription>MergeSort-${project.version}</fileDescription-->
+                                <fileDescription>Java Home</fileDescription>
                                 <copyright>Tirskikh Denis</copyright>
-                                <productVersion>0.0.0.0</productVersion>
+                                <productVersion>0.0</productVersion>
                                 <txtProductVersion>${project.version}</txtProductVersion>
                                 <productName>MergeSort</productName>
                                 <internalName>MergeSort</internalName>
