@@ -1,3 +1,4 @@
+[comment]: <> (https://dillinger.io/)
 ## MergeSort
 Сортировка слиянием файлов со строковыми или целочисленными массивами
 ### Для запуска
@@ -26,31 +27,31 @@
 ### Примеры использования
 
 Версия java <br />
-![Версия java](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JavaVersion.PNG)
+![java -version](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JavaVersion.PNG)
 
 Для входных файлов с целыми числами. Сортировка по возрастанию. <br />
 jar в случае ошибок с входными данными - покажет ошибку: <br />
-![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntAsc.PNG)
+![java -jar MergeSort.jar -a -i int1.txt,int2.txt,int3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntAsc.PNG)
 
 Для входных файлов с целыми числами. Сортировка по убыванию. <br />
 jar в случае ошибок с входными данными - покажет ошибку: <br />
-![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntDes.PNG)
+![java -jar MergeSort.jar -d -i int1.txt,int2.txt,int3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntDes.PNG)
 
 Для входных файлов с целыми числами. Сортировка по убыванию. <br />
 exe в случае ошибок с входными данными ошибок не выведет: <br />
-![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/ExeIntDes.PNG)
+![MergeSort.exe -d -i int1.txt,int2.txt,int3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/ExeIntDes.PNG)
 
 Для входных файлов со строками. Сортировка по возрастанию. <br />
 jar в случае ошибок с входными данными - покажет ошибку: <br />
-![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrAsc.png)
+![java -jar MergeSort.jar -a -s str1.txt,str2.txt,str3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrAsc.png)
 
 Для входных файлов со строками. Сортировка по убыванию. <br /> 
 jar в случае ошибок с входными данными - покажет ошибку: <br />
-![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrDes.PNG)
+![java -jar MergeSort.jar -d -s str1.txt,str2.txt,str3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrDes.PNG)
 
 Для входных файлов со строками. Сортировка по убыванию. <br />
 exe в случае ошибок с входными данными ошибок не выведет: <br />
-![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/ExeStrDes.PNG)
+![MergeSort.exe -d -s str1.txt,str2.txt,str3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/ExeStrDes.PNG)
 
 
 ### Реализация
