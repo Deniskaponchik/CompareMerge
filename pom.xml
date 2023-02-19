@@ -95,8 +95,10 @@
                             <errTitle>Launching error</errTitle>
                             <dontWrapJar>true</dontWrapJar>
                             <jre>
-                                <!-- <path>%PWD%/jre-17.0.1</path> -->
-                                <path>%PWD%/jre-19.0.2</path>
+                                <!--path>%PWD%/jre-17.0.1</path-->
+                                <!--path>%ProgramFiles%/Java/jdk-19</path-->
+                                <path>%JAVA_HOME%</path>
+
                                 <!--jdkPreference>preferJdk</jdkPreference-->
                                 <requiresJdk>true</requiresJdk>
                                 <initialHeapPercent>20</initialHeapPercent>
