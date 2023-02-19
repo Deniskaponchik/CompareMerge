@@ -4,12 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- The Basics -->
     <groupId>org.example.main</groupId>
     <artifactId>MergeSort</artifactId>
-    <version>v0.5</version>
+    <version>0.5</version>
     <packaging>jar</packaging>
 
+    <!-- More Project Information -->
     <name>Merge Sort</name>
+    <description>Sort files with strings or integers with merge sort</description>
+    <inceptionYear>2023</inceptionYear>
+    <!--organization>СFT project SHIFT</organization-->
     <url>https://github.com/Deniskaponchik/CompareMerge</url>
     <developers>
         <developer>
@@ -63,6 +68,58 @@
                             <descriptorRefs>
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+
+            <plugin>
+                <groupId>com.akathist.maven.plugins.launch4j</groupId>
+                <artifactId>launch4j-maven-plugin</artifactId>
+                <version>2.3.2</version>
+                <executions>
+                    <execution>
+                        <id>l4j-clui</id>
+                        <phase>compile</phase>
+                        <goals><goal>launch4j</goal></goals>
+                        <configuration>
+                            <headerType>gui</headerType>
+                            <outfile>target/MergeSort.exe</outfile>
+                            <jar>MergeSort.jar</jar>
+                            <!--icon>src/main/resources/microQR.ico</icon-->
+                            <icon>src/main/resources/MergeSortICO.ico</icon>
+                            <!--downloadUrl>https://download.oracle.com/java/17/archive/jdk-17.0.1_windows-x64_bin.msi</downloadUrl-->
+                            <downloadUrl>https://download.oracle.com/java/19/archive/jdk-19.0.2_windows-x64_bin.msi</downloadUrl>
+                            <errTitle>Launching error</errTitle>
+                            <dontWrapJar>true</dontWrapJar>
+                            <jre>
+                                <!-- <path>%PWD%/jre-17.0.1</path> -->
+                                <path>%PWD%/jre-19.0.2</path>
+                                <!--jdkPreference>preferJdk</jdkPreference-->
+                                <requiresJdk>true</requiresJdk>
+                                <initialHeapPercent>20</initialHeapPercent>
+                                <maxHeapPercent>80</maxHeapPercent>
+                            </jre>
+                            <versionInfo>
+                                <fileVersion>0.0.0.0</fileVersion>
+                                <txtFileVersion>${project.version}</txtFileVersion>
+                                <fileDescription>MergeSort-${project.version}</fileDescription>
+                                <copyright>Tirskikh Denis</copyright>
+                                <productVersion>0.0.0.0</productVersion>
+                                <txtProductVersion>${project.version}</txtProductVersion>
+                                <productName>MergeSort</productName>
+                                <internalName>MergeSort</internalName>
+                                <originalFilename>MergeSort.exe</originalFilename>
+                            </versionInfo>
+                            <messages>
+                                <startupErr>Startup error</startupErr>
+                                <!--bundledJreErr>Bundled Jre Error</bundledJreErr-->
+                                <jreNotFoundErr>Bundled Jre Error</jreNotFoundErr>
+                                <jreVersionErr>Jre Version Error</jreVersionErr>
+                                <launcherErr>Launcher Error</launcherErr>
+                            </messages>
                         </configuration>
                     </execution>
                 </executions>
