@@ -2,8 +2,10 @@
 Сортировка слиянием файлов со строковыми или целочисленными массивами
 ### Для запуска
 1. Скачать на компьютер папку [RunMe](https://github.com/Deniskaponchik/CompareMerge/tree/master/RunMe)
-2. Должна быть установлена Java на ПК и прописана переменная окружения %JAVA_HOME% для Windows
-3.
+2. Должна быть установлена [Java SE Development Kit 19.0.2](https://www.oracle.com/java/technologies/downloads/#java19) на компьютере
+3. Перезагрузиться
+4. Перейти в командной строке в скачанную папку.
+
 
 ### Аргументы
 | Аргумент                          | Описание |
@@ -22,6 +24,10 @@
 
 
 ### Примеры использования
+
+Версия java
+![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JavaVersion.PNG)
+
 Для файлов с целыми числами. Сортировка по возрастанию:
 ![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntAsc.PNG)
 
