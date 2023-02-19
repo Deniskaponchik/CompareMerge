@@ -2,11 +2,20 @@
 [comment]: <> (https://cloudconvert.com/save-website-pdf)
 ## MergeSort
 Сортировка слиянием файлов со строковыми или целочисленными массивами
-### Для запуска
-1. Скачать на компьютер папку [RunMe](https://github.com/Deniskaponchik/CompareMerge/tree/master/RunMe)
-2. Должна быть установлена [Java SE Development Kit 19.0.2](https://www.oracle.com/java/technologies/downloads/#java19) на компьютере. Мог бы выложить решение без установки, но GitHub не даёт заливать файлы больше 100мб в проект(с файлами JRE). Перезагрузиться
-4. Перейти в командной строке в скачанную папку.
+### Вариант запуска №1 (с установкой Java)
+1. Должна быть установлена [Java SE Development Kit 19.0.2](https://www.oracle.com/java/technologies/downloads/#java19) на компьютере. 
+2. Прописана переменная окружения. Для Windows это %JAVA_HOME%
+3. Перезагрузиться
+4. Скачать на компьютер папку [RunMe](https://github.com/Deniskaponchik/CompareMerge/tree/master/RunMe)
+5. Перейти в командной строке в скачанную папку.
 
+Версия java <br />
+![java -version](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JavaVersion.PNG)
+Переменная окружения <br />
+![java -version](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JavaHome.PNG)
+
+### Вариант запуска №2 (Без установки Java)
+GitHub не даёт заливать файлы больше 100мб в проект. Проект со вложенным окружением JRE, где всё включено и ничего не нужно устанавливать, выложил [сюда](https://mega.nz/folder/0TYx2T6R#b4HKkgXknJ0QG7lsHc3fDQ)
 
 ### Аргументы
 | Аргумент                        | Описание |
@@ -28,9 +37,6 @@
 
 
 ### Примеры использования
-
-Версия java <br />
-![java -version](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JavaVersion.PNG)
 
 Для входных файлов с целыми числами. Сортировка по возрастанию. <br />
 jar в случае ошибок с входными данными - покажет ошибку: <br />
