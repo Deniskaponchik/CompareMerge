@@ -56,7 +56,7 @@ public class MergeSortInt {
         int[] result = new int[left.length + right.length];
 
         while (i < left.length && j < right.length) {
-            //if (left[i] < right[j]) {
+            //if (left[i] < right[j]) {  //для прямой сортировки
             if (left[i] > right[j]) {
                 result[k] = left[i];
                 i++;

@@ -21,10 +21,8 @@ public class Main {
 
                 File file;
                 if(isDevelopmentEnvironment()) { //проверка на запуск кода в IDEA или нет
-                    //File file = new File(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + fp);
                     file = new File(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + fp);
                 } else {
-                    //File file = new File(System.getProperty("user.dir") + "\\" + fp);
                     file = new File(System.getProperty("user.dir") + "\\" + fp);
                 }
                 System.out.println(file.toString());
@@ -70,10 +68,8 @@ public class Main {
         //BufferedWriter outputWriter = null;
         BufferedWriter outputWriter;
         if(isDevelopmentEnvironment()) { //проверка на запуск в IDEA или нет
-            //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
             outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
         } else {
-            //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" +ApacheCommonsCli.getOutFilePath(cmd)));
             outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" + ApacheCommonsCli.getOutFilePath(cmd)));
         }
         try {
@@ -120,19 +116,6 @@ public class Main {
             outputWriter.flush();
             outputWriter.close();
         }
-        /*
-        String[] unsortedStrArr = unsoredStrArrList.toArray(new String[unsoredStrArrList.size()]);
-        //String[] unsortedStrArr = unsoredStrArrList.stream().toList(i -> i).toArray();
-        int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();
-        //System.out.println(unsortedIntArr.toString());
-        //System.out.println(unsortedStrArr.toString());
-
-        String[] sortedStrArr = MergeSortStrings_01.getAscSortedStrArr(unsortedStrArr);
-        int[] sortedIntArr = MergeSortInt_02.sortAsc(unsortedIntArr);
-
-        System.out.println(Arrays.toString(sortedIntArr));
-        System.out.println(Arrays.toString(sortedStrArr));
-         */
 
 
     }
