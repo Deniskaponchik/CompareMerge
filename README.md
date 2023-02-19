@@ -25,8 +25,8 @@
 
 ### Примеры использования
 
-Версия java
-![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JavaVersion.PNG)
+Версия java <br />
+![Версия java](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JavaVersion.PNG)
 
 Для файлов с целыми числами. Сортировка по возрастанию:
 ![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntAsc.PNG)
@@ -34,8 +34,8 @@
 Для файлов с целыми числами. Сортировка по убыванию:
 ![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntDes.PNG)
 
-Для файлов со строками. Сортировка по возрастанию:
-![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrAsc.PNG)
+Для файлов со строками. Сортировка по возрастанию: <br />
+![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrAsc.png)
 
 Для файлов со строками. Сортировка по убыванию:
 ![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrDes.PNG)
