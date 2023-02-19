@@ -43,7 +43,7 @@ public class MergeSortInt {
 
 
     public static int[] sortDes(int[] result) {
-        if (result.length < 2) {  //если число элементов во входном массиве меньше 2 - возвращаем
+        if (result.length < 2) {
             return result;
         } else {
             int[] left = sortDes(Arrays.copyOfRange(result,0, result.length/2));
