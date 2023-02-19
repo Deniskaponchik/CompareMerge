@@ -97,8 +97,8 @@
                             <jre>
                                 <!--path>%PWD%/jre-17.0.1</path-->
                                 <!--path>%ProgramFiles%/Java/jdk-19</path-->
-                                <!--path>%JAVA_HOME%</path--><!--if JDK installed in the system-->
-                                <path>../jre</path><!--if JRE in the folder of programm-->
+                                <path>%JAVA_HOME%</path><!--if JDK installed in the system-->
+                                <!--path>../jre</path--><!--if JRE in the folder of programm-->
 
                                 <!--jdkPreference>preferJdk</jdkPreference-->
                                 <requiresJdk>true</requiresJdk>

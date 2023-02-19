@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9df49331-c45f-44af-83ef-90847371ec37" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/main/MergeSortStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/ApacheCommonsCli_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/ApacheCommonsCli_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/Main1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/Main1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/Main2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/MergeSortInt_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/MergeSortInt_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/MergeSortInt_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/MergeSortInt_02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/MergeSortInt_03.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/MergeSortInt_03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/MergeSortStrings_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/MergeSortStrings_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/backup/MergeSortStrings_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/backup/MergeSortStrings_02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/ApacheCommonsCli.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/ApacheCommonsCli.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortInt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/main/MergeSortStrings.class" afterDir="false" />
-    </list>
+    <list default="true" id="9df49331-c45f-44af-83ef-90847371ec37" name="Changes" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,15 +42,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "F:/MergeSort",
-    "settings.editor.selected.configurable": "Settings.Markdown"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/MergeSort&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.Markdown&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.backup" />
