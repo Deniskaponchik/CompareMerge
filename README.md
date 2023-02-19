@@ -2,7 +2,7 @@
 Сортировка слиянием файлов со строковыми или целочисленными массивами
 ### Для запуска
 1. Скачать на компьютер папку [RunMe](https://github.com/Deniskaponchik/CompareMerge/tree/master/RunMe)
-2. Должна быть установлена [Java SE Development Kit 19.0.2](https://www.oracle.com/java/technologies/downloads/#java19) на компьютере
+2. Должна быть установлена [Java SE Development Kit 19.0.2](https://www.oracle.com/java/technologies/downloads/#java19) на компьютере. Мог бы выложить решение без установки, но GitHub не даёт заливать файлы больше 100мб в проект(с файлами JRE).
 3. Перезагрузиться
 4. Перейти в командной строке в скачанную папку.
 
@@ -28,21 +28,36 @@
 Версия java <br />
 ![Версия java](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JavaVersion.PNG)
 
-Для файлов с целыми числами. Сортировка по возрастанию:
+Для входных файлов с целыми числами. Сортировка по возрастанию. <br />
+jar в случае ошибок с входными данными - покажет ошибку: <br />
 ![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntAsc.PNG)
 
-Для файлов с целыми числами. Сортировка по убыванию:
+Для входных файлов с целыми числами. Сортировка по убыванию. <br />
+jar в случае ошибок с входными данными - покажет ошибку: <br />
 ![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntDes.PNG)
 
-Для файлов со строками. Сортировка по возрастанию: <br />
+Для входных файлов с целыми числами. Сортировка по убыванию. <br />
+exe в случае ошибок с входными данными ошибок не выведет: <br />
+![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/ExeIntDes.PNG)
+
+Для входных файлов со строками. Сортировка по возрастанию. <br />
+jar в случае ошибок с входными данными - покажет ошибку: <br />
 ![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrAsc.png)
 
-Для файлов со строками. Сортировка по убыванию:
+Для входных файлов со строками. Сортировка по убыванию. <br /> 
+jar в случае ошибок с входными данными - покажет ошибку: <br />
 ![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrDes.PNG)
+
+Для входных файлов со строками. Сортировка по убыванию. <br />
+exe в случае ошибок с входными данными ошибок не выведет: <br />
+![alt text](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/ExeStrDes.PNG)
+
 
 ### Реализация
 [Java 19.0.2](https://www.oracle.com/java/technologies/downloads/#java19) <br />
 [Maven 4.0.0](https://github.com/Deniskaponchik/CompareMerge/blob/master/pom.xml)
 * commons-io
-* maven-assembly-plugin
+* commons-cli
+* [maven-assembly-plugin](https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-assembly-plugin)
+* [launch4j-maven-plugin](https://mvnrepository.com/artifact/com.akathist.maven.plugins.launch4j/launch4j-maven-plugin)
 
