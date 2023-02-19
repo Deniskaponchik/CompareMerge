@@ -59,8 +59,6 @@ public class MergeSortStrings {
 
 
     public static String[] getDesSortedStrArr(String[] values) {
-        //String[] values = {"foo", "bar", "alice", "bob", "celine", "david"};
-        //String[] values = {"Петя", "Маша", "Катя", "Женя", "Саня", "Алишер"};
         mergeSortDes(values, 0, values.length - 1);
         //System.out.println("Result " + Arrays.toString(values));
         return values;
