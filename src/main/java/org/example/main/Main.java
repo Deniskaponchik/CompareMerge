@@ -88,22 +88,6 @@ public class Main {
                     outputWriter.write(Integer.toString(sortedIntArr[i]));
                     outputWriter.newLine();
                 }
-                /*
-                if (ApacheCommonsCli.getSortType(cmd)) {
-                    int[] sortedIntArr = MergeSortInt.sortAsc(unsortedIntArr);
-                    //System.out.println(Arrays.toString(sortedIntArr));
-                    for (int i = 0; i < sortedIntArr.length; i++) {
-                        outputWriter.write(Integer.toString(sortedIntArr[i]));
-                        outputWriter.newLine();
-                    }
-                } else {
-                    int[] sortedIntArr = MergeSortInt.sortDes(unsortedIntArr);
-                    //System.out.println(Arrays.toString(sortedIntArr));
-                    for (int i = 0; i < sortedIntArr.length; i++) {
-                        outputWriter.write(Integer.toString(sortedIntArr[i]));
-                        outputWriter.newLine();
-                    }
-                }     */
 
 
 
