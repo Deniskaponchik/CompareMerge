@@ -99,24 +99,6 @@ public class Main {
                 }
             }
 
-                /*
-                String[] unsortedStrArr = unsoredStrArrList.toArray(new String[unsoredStrArrList.size()]);
-                if (ApacheCommonsCli.getSortType(cmd)) {
-                    String[] sortedStrArr = MergeSortStrings.getAscSortedStrArr(unsortedStrArr);
-                    //System.out.println(Arrays.toString(sortedStrArr));
-                    for (int i = 0; i < sortedStrArr.length; i++) {
-                        outputWriter.write(sortedStrArr[i]+"");
-                        outputWriter.newLine();
-                    }
-                } else {
-                    String[] sortedStrArr = MergeSortStrings.getDesSortedStrArr(unsortedStrArr);
-                    //System.out.println(Arrays.toString(sortedStrArr));
-                    for (int i = 0; i < sortedStrArr.length; i++) {
-                        outputWriter.write(sortedStrArr[i]+"");
-                        outputWriter.newLine();
-                    }
-                } */
-
 
         } catch (Exception e) {
             System.out.println("не удалось записать данные в итоговый файл");
