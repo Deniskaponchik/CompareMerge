@@ -8,9 +8,13 @@ public class Main {
         CommandLine cmd = ApacheCommonsCli.getCmd(args);
         //System.out.println(ApacheCommonsCli.getSortType(cmd));
         String[] filesNames = ApacheCommonsCli.getFilePaths(cmd);
+        String outFile = ApacheCommonsCli.getOutFilePath(cmd);
+        Boolean sortType = ApacheCommonsCli.getSortType(cmd);
+
 
         ArrayList<Integer> unsoredIntArrList = new ArrayList<>();
         ArrayList<String> unsoredStrArrList = new ArrayList<>();
+
 
         for (String fp : filesNames) {
             //String fileName = "/Users/admin/source.txt";
@@ -21,10 +25,8 @@ public class Main {
 
                 File file;
                 if(isDevelopmentEnvironment()) { //проверка на запуск кода в IDEA или нет
-                    //File file = new File(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + fp);
                     file = new File(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + fp);
                 } else {
-                    //File file = new File(System.getProperty("user.dir") + "\\" + fp);
                     file = new File(System.getProperty("user.dir") + "\\" + fp);
                 }
                 System.out.println(file.toString());
@@ -71,14 +73,22 @@ public class Main {
         BufferedWriter outputWriter;
         if(isDevelopmentEnvironment()) { //проверка на запуск в IDEA или нет
             //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
-            outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
+            outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + outFile));
+
         } else {
-            //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" +ApacheCommonsCli.getOutFilePath(cmd)));
-            outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" + ApacheCommonsCli.getOutFilePath(cmd)));
+            //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" + ApacheCommonsCli.getOutFilePath(cmd)));
+            outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" + outFile));
         }
         try {
             if (cmd.hasOption("i")) {
                 int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();
+                int[] sortedIntArr = MergeSortInt.sort(unsortedIntArr, sortType);
+                //System.out.println(Arrays.toString(sortedIntArr));
+                for (int i = 0; i < sortedIntArr.length; i++) {
+                    outputWriter.write(Integer.toString(sortedIntArr[i]));
+                    outputWriter.newLine();
+                }
+                /*
                 if (ApacheCommonsCli.getSortType(cmd)) {
                     int[] sortedIntArr = MergeSortInt.sortAsc(unsortedIntArr);
                     //System.out.println(Arrays.toString(sortedIntArr));
@@ -93,7 +103,9 @@ public class Main {
                         outputWriter.write(Integer.toString(sortedIntArr[i]));
                         outputWriter.newLine();
                     }
-                }
+                }     */
+
+
 
             } else { //Сортировка строкового массива
                 String[] unsortedStrArr = unsoredStrArrList.toArray(new String[unsoredStrArrList.size()]);
@@ -120,19 +132,6 @@ public class Main {
             outputWriter.flush();
             outputWriter.close();
         }
-        /*
-        String[] unsortedStrArr = unsoredStrArrList.toArray(new String[unsoredStrArrList.size()]);
-        //String[] unsortedStrArr = unsoredStrArrList.stream().toList(i -> i).toArray();
-        int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();
-        //System.out.println(unsortedIntArr.toString());
-        //System.out.println(unsortedStrArr.toString());
-
-        String[] sortedStrArr = MergeSortStrings_01.getAscSortedStrArr(unsortedStrArr);
-        int[] sortedIntArr = MergeSortInt_02.sortAsc(unsortedIntArr);
-
-        System.out.println(Arrays.toString(sortedIntArr));
-        System.out.println(Arrays.toString(sortedStrArr));
-         */
 
 
     }
