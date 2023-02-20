@@ -108,12 +108,6 @@ public class ApacheCommonsCli {
 
     //public static String getSortType(CommandLine cmd) {
       public static Boolean getSortType(CommandLine cmd) {
-        /*
-        String ascSort = cmd.getOptionValue("a");
-        System.out.println("Sort " + ascSort);
-        String descSort = cmd.getOptionValue("d");
-        System.out.println("Sort " + descSort);
-        */
         String sort;
         if (cmd.hasOption("d")) {
             //String sortKind = cmd.getOptionValue("desSortOpt");
