@@ -7,7 +7,7 @@
     <!-- The Basics -->
     <groupId>org.example.main</groupId>
     <artifactId>MergeSort</artifactId>
-    <version>0.6</version>
+    <version>0.7</version>
     <packaging>jar</packaging>
 
     <!-- More Project Information -->
@@ -109,7 +109,7 @@
                                 <fileVersion>0.0.${project.version}</fileVersion>
                                 <txtFileVersion>${project.version}</txtFileVersion>
                                 <!--fileDescription>MergeSort-${project.version}</fileDescription-->
-                                <fileDescription>Java Home</fileDescription>
+                                <fileDescription>used Java Home</fileDescription>
                                 <copyright>Tirskikh Denis</copyright>
                                 <productVersion>0.0.${project.version}</productVersion>
                                 <txtProductVersion>${project.version}</txtProductVersion>

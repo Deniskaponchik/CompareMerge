@@ -80,7 +80,7 @@ public class Main {
             outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" + outFile));
         }
         try {
-            if (cmd.hasOption("i")) {
+            if (cmd.hasOption("i")) {  //Сортировка числового массива
                 int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();
                 int[] sortedIntArr = MergeSortInt.sort(unsortedIntArr, sortType);
                 //System.out.println(Arrays.toString(sortedIntArr));
@@ -89,9 +89,17 @@ public class Main {
                     outputWriter.newLine();
                 }
 
-
-
             } else { //Сортировка строкового массива
+                String[] unsortedStrArr = unsoredStrArrList.toArray(new String[unsoredStrArrList.size()]);
+                String[] sortedStrArr = MergeSortStrings.getSortedStrArr(unsortedStrArr, sortType);
+                //System.out.println(Arrays.toString(sortedStrArr));
+                for (int i = 0; i < sortedStrArr.length; i++) {
+                    outputWriter.write(sortedStrArr[i] + "");
+                    outputWriter.newLine();
+                }
+            }
+
+                /*
                 String[] unsortedStrArr = unsoredStrArrList.toArray(new String[unsoredStrArrList.size()]);
                 if (ApacheCommonsCli.getSortType(cmd)) {
                     String[] sortedStrArr = MergeSortStrings.getAscSortedStrArr(unsortedStrArr);
@@ -107,8 +115,9 @@ public class Main {
                         outputWriter.write(sortedStrArr[i]+"");
                         outputWriter.newLine();
                     }
-                }
-            }
+                } */
+
+
         } catch (Exception e) {
             System.out.println("не удалось записать данные в итоговый файл");
         } finally {

@@ -59,22 +59,22 @@ public class MergeSortStrings {
 
 
 
-    public static String[] getDesSortedStrArr(String[] values) {
-        mergeSortDes(values, 0, values.length - 1);
+    public static String[] getSortedStrArr(String[] values, boolean sortType) {
+        mergeSortDes(values, 0, values.length - 1, sortType);
         //System.out.println("Result " + Arrays.toString(values));
         return values;
     }
-    public static void mergeSortDes(String[] a, int from, int to) {
+    public static void mergeSortDes(String[] a, int from, int to, boolean sortType) {
         if (from == to) {
             return;
         }
         int mid = (from + to) / 2;
         // сортировка первой и второй половины
-        mergeSortDes(a, from, mid);
-        mergeSortDes(a, mid + 1, to);
-        mergeDes(a, from, mid, to);
+        mergeSortDes(a, from, mid, sortType);
+        mergeSortDes(a, mid + 1, to, sortType);
+        mergeDes(a, from, mid, to, sortType);
     }
-    public static void mergeDes(String[] a, int from, int mid, int to) {
+    public static void mergeDes(String[] a, int from, int mid, int to, boolean sortType) {
         int n = to - from + 1;       // размер диапазона для объединения
         String[] b = new String[n];  // объединить обе половины во временный массив b
         int i1 = from;               // следующий элемент для рассмотрения в первом диапазоне
@@ -83,15 +83,31 @@ public class MergeSortStrings {
 
         // пока ни i1, ни i2 не дошли до конца, перемещаем меньший в b
         while (i1 <= mid && i2 <= to) {
-            //if (a[i1].compareTo(a[i2]) < 0) {   /для прямой сортировки
-            if (a[i2].compareTo(a[i1]) < 0) {
-                b[j] = a[i1];
-                i1++;
+
+            if (sortType) {
+                if (a[i1].compareTo(a[i2]) < 0) {   //для прямой сортировки
+                //if (a[i2].compareTo(a[i1]) < 0) {
+                    b[j] = a[i1];
+                    i1++;
+                } else {
+                    b[j] = a[i2];
+                    i2++;
+                }
             } else {
-                b[j] = a[i2];
-                i2++;
+
+                //if (a[i1].compareTo(a[i2]) < 0) {   //для прямой сортировки
+                if (a[i2].compareTo(a[i1]) < 0) {    //для обратной сортировки
+                    b[j] = a[i1];
+                    i1++;
+                } else {
+                    b[j] = a[i2];
+                    i2++;
+                }
             }
             j++;
+
+
+
         }
         //выполняется только один из двух циклов while ниже.
         // копируем все оставшиеся записи первой половины
@@ -111,6 +127,9 @@ public class MergeSortStrings {
             a[from + j] = b[j];
         }
     }
+
+
+
 
 
 
