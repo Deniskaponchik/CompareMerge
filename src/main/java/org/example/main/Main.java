@@ -14,7 +14,7 @@ public class Main {
 
         ArrayList<Integer> unsoredIntArrList = new ArrayList<>();
         ArrayList<String> unsoredStrArrList = new ArrayList<>();
-        
+
 
         for (String fp : filesNames) {
             //String fileName = "/Users/admin/source.txt";
@@ -82,6 +82,13 @@ public class Main {
         try {
             if (cmd.hasOption("i")) {
                 int[] unsortedIntArr = unsoredIntArrList.stream().mapToInt(i -> i).toArray();
+                int[] sortedIntArr = MergeSortInt.sort(unsortedIntArr, sortType);
+                //System.out.println(Arrays.toString(sortedIntArr));
+                for (int i = 0; i < sortedIntArr.length; i++) {
+                    outputWriter.write(Integer.toString(sortedIntArr[i]));
+                    outputWriter.newLine();
+                }
+                /*
                 if (ApacheCommonsCli.getSortType(cmd)) {
                     int[] sortedIntArr = MergeSortInt.sortAsc(unsortedIntArr);
                     //System.out.println(Arrays.toString(sortedIntArr));
@@ -96,7 +103,9 @@ public class Main {
                         outputWriter.write(Integer.toString(sortedIntArr[i]));
                         outputWriter.newLine();
                     }
-                }
+                }     */
+
+
 
             } else { //Сортировка строкового массива
                 String[] unsortedStrArr = unsoredStrArrList.toArray(new String[unsoredStrArrList.size()]);
