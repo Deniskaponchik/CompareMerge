@@ -1,14 +1,12 @@
 package org.example.main;
-
 import org.apache.commons.cli.*;
-
 public class ApacheCommonsCli {
 
     /*
-    private static String sort;
-    public static String getSort(){
-        return sort;
-    } */
+    public static CommandLine cmd = getCmd(args);
+    public static boolean sortType = getSortType(cmd);
+     */
+
 
     //public static void main(String[] args) throws Exception {
       public static CommandLine getCmd(String[] args) {

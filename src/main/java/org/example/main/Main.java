@@ -8,9 +8,13 @@ public class Main {
         CommandLine cmd = ApacheCommonsCli.getCmd(args);
         //System.out.println(ApacheCommonsCli.getSortType(cmd));
         String[] filesNames = ApacheCommonsCli.getFilePaths(cmd);
+        String outFile = ApacheCommonsCli.getOutFilePath(cmd);
+        Boolean sortType = ApacheCommonsCli.getSortType(cmd);
+
 
         ArrayList<Integer> unsoredIntArrList = new ArrayList<>();
         ArrayList<String> unsoredStrArrList = new ArrayList<>();
+        
 
         for (String fp : filesNames) {
             //String fileName = "/Users/admin/source.txt";
@@ -68,9 +72,12 @@ public class Main {
         //BufferedWriter outputWriter = null;
         BufferedWriter outputWriter;
         if(isDevelopmentEnvironment()) { //проверка на запуск в IDEA или нет
-            outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
+            //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + ApacheCommonsCli.getOutFilePath(cmd)));
+            outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\src\\main\\java\\org\\example\\main\\" + outFile));
+
         } else {
-            outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" + ApacheCommonsCli.getOutFilePath(cmd)));
+            //outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" + ApacheCommonsCli.getOutFilePath(cmd)));
+            outputWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" + outFile));
         }
         try {
             if (cmd.hasOption("i")) {
