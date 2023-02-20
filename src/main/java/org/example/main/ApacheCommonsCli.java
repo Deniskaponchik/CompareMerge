@@ -2,12 +2,6 @@ package org.example.main;
 import org.apache.commons.cli.*;
 public class ApacheCommonsCli {
 
-    /*
-    public static CommandLine cmd = getCmd(args);
-    public static boolean sortType = getSortType(cmd);
-     */
-
-
     //public static void main(String[] args) throws Exception {
       public static CommandLine getCmd(String[] args) {
           //ApacheCommonsCli_01.getSum(String[] args);
@@ -74,24 +68,17 @@ public class ApacheCommonsCli {
               System.exit(1);
           }
 
-
           return cmd;
-      } //end of getCmd
+      }
 
 
 
     public static String[] getFilePaths(CommandLine cmd) {
           if(cmd.hasOption("i")) {
-              //String integerFilePath = cmd.getOptionValue("i");
               String[] integerFilePath = cmd.getOptionValues("i");
-              //System.out.println("Integer " + integerFilePath);
-              //System.out.println(Arrays.toString(integerFilePath));
               return integerFilePath;
           } else {
-              //String stringFilePath = cmd.getOptionValue("s");
               String[] stringFilePath = cmd.getOptionValues("s");
-              //System.out.println("String " + stringFilePath);
-              //System.out.println(Arrays.toString(stringFilePath));
               return stringFilePath;
           }
     }
@@ -108,23 +95,12 @@ public class ApacheCommonsCli {
       public static Boolean getSortType(CommandLine cmd) {
         String sort;
         if (cmd.hasOption("d")) {
-            //String sortKind = cmd.getOptionValue("desSortOpt");
-            //System.out.println("Has d");
-            //sort = "descending";
             return false;
         } else {
-            //String sortKind = cmd.getOptionValue("ascSortOpt");
-            //System.out.println("Has a");
-            //sort = "ascending";
             return true;
         }
-
-        //return sort;
     }
 
-
-
-    //}
 
 
 
