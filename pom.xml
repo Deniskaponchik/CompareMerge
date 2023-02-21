@@ -107,7 +107,7 @@
                                 <!--path>%ProgramFiles%/Java/jdk-19</path--><!--Не заработало на Windows-->
                                 <!--path>%JAVA_HOME%</path--><!--РАБОЧЕЕ. ДОЛЖНА быть прописана переменная окружения-->
 
-                                <path>${jre.path.pwd}</path><!--РАБОЧЕЕ-->
+                                <path>${jre.path.home}</path><!--РАБОЧЕЕ-->
 
                                 <!--jdkPreference>preferJdk</jdkPreference-->
                                 <requiresJdk>true</requiresJdk>
@@ -118,7 +118,7 @@
                                 <fileVersion>0.0.${project.version}</fileVersion>
                                 <txtFileVersion>${project.version}</txtFileVersion>
 
-                                <fileDescription>${jre.path.pwd}</fileDescription>
+                                <fileDescription>${jre.path.home}</fileDescription>
 
                                 <copyright>Tirskikh Denis</copyright>
                                 <productVersion>0.0.${project.version}</productVersion>
