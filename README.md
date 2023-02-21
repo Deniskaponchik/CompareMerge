@@ -40,6 +40,10 @@ GitHub не даёт заливать файлы больше 100мб в про�
 
 ### Примеры использования
 
+Для входных файлов с целыми числами. Сортировка по убыванию. <br />
+exe в случае ошибок с входными данными ошибок не выведет: <br />
+![MergeSort.exe -d -i int1.txt,int2.txt,int3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/ExeIntDes.PNG)
+
 Для входных файлов с целыми числами. Сортировка по возрастанию. <br />
 jar в случае ошибок с входными данными - покажет ошибку: <br />
 ![java -jar MergeSort.jar -a -i int1.txt,int2.txt,int3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntAsc.PNG)
@@ -48,9 +52,9 @@ jar в случае ошибок с входными данными - покаж
 jar в случае ошибок с входными данными - покажет ошибку: <br />
 ![java -jar MergeSort.jar -d -i int1.txt,int2.txt,int3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarIntDes.PNG)
 
-Для входных файлов с целыми числами. Сортировка по убыванию. <br />
+Для входных файлов со строками. Сортировка по убыванию. <br />
 exe в случае ошибок с входными данными ошибок не выведет: <br />
-![MergeSort.exe -d -i int1.txt,int2.txt,int3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/ExeIntDes.PNG)
+![MergeSort.exe -d -s str1.txt,str2.txt,str3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/ExeStrDes.PNG)
 
 Для входных файлов со строками. Сортировка по возрастанию. <br />
 jar в случае ошибок с входными данными - покажет ошибку: <br />
@@ -60,13 +64,9 @@ jar в случае ошибок с входными данными - покаж
 jar в случае ошибок с входными данными - покажет ошибку: <br />
 ![java -jar MergeSort.jar -d -s str1.txt,str2.txt,str3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/JarStrDes.PNG)
 
-Для входных файлов со строками. Сортировка по убыванию. <br />
-exe в случае ошибок с входными данными ошибок не выведет: <br />
-![MergeSort.exe -d -s str1.txt,str2.txt,str3.txt -o result.txt](https://github.com/Deniskaponchik/CompareMerge/blob/master/png/ExeStrDes.PNG)
-
 
 ### Реализация
-[Java 19.0.2](https://www.oracle.com/java/technologies/downloads/#java19) <br />
+[Java 19.0.2](https://www.oracle.com/java/technologies/downloads/#java19) + [Исходные файлы](https://github.com/Deniskaponchik/CompareMerge/tree/master/src/main/java/org/example/main)<br />
 [Maven 4.0.0](https://github.com/Deniskaponchik/CompareMerge/blob/master/pom.xml)
 * commons-io
 * commons-cli
