@@ -28,9 +28,12 @@
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <!--My Variables-->
         <jre.path.pwd>%PWD%/jdk-19.0.2</jre.path.pwd>
         <jre.path.home>%JAVA_HOME%</jre.path.home>
+        <jre.path>${jre.path.home}</jre.path><!--Изменить, в зависимотси от места расположения JRE-->
+
         <jre.url>https://download.oracle.com/java/19/archive/jdk-19.0.2_windows-x64_bin.msi</jre.url>
     </properties>
 
@@ -95,7 +98,8 @@
                         <configuration>
                             <headerType>gui</headerType>
                             <outfile>target/MergeSort.exe</outfile>
-                            <jar>target/MergeSort.jar</jar><!--файл, который будет взят для обёртки в exe. Должен быть создан ДО выполнения package-->
+                            <!--файл, который будет взят для обёртки в exe. Должен быть создан ДО выполнения package-->
+                            <jar>target/MergeSort.jar</jar>
                             <icon>src/main/resources/MergeSortICO.ico</icon>
                             <downloadUrl>${jre.url}</downloadUrl>
                             <errTitle>Launching error</errTitle>
@@ -107,7 +111,8 @@
                                 <!--path>%ProgramFiles%/Java/jdk-19</path--><!--Не заработало на Windows-->
                                 <!--path>%JAVA_HOME%</path--><!--РАБОЧЕЕ. ДОЛЖНА быть прописана переменная окружения-->
 
-                                <path>${jre.path.home}</path><!--РАБОЧЕЕ-->
+                                <!--path>${jre.path.home}</path--><!--РАБОЧЕЕ-->
+                                <path>${jre.path}</path><!--РАБОЧЕЕ-->
 
                                 <!--jdkPreference>preferJdk</jdkPreference-->
                                 <requiresJdk>true</requiresJdk>
@@ -118,7 +123,8 @@
                                 <fileVersion>0.0.${project.version}</fileVersion>
                                 <txtFileVersion>${project.version}</txtFileVersion>
 
-                                <fileDescription>${jre.path.home}</fileDescription>
+                                <!--fileDescription>${jre.path.home}</fileDescription-->
+                                <fileDescription>${jre.path}</fileDescription>
 
                                 <copyright>Tirskikh Denis</copyright>
                                 <productVersion>0.0.${project.version}</productVersion>
