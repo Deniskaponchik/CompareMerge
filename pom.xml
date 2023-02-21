@@ -28,7 +28,12 @@
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--My Variables-->
+        <jre.path.pwd>%PWD%/jdk-19.0.2</jre.path.pwd>
+        <jre.path.home>%JAVA_HOME%</jre.path.home>
     </properties>
+
+
 
     <dependencies>
         <dependency>
@@ -44,6 +49,8 @@
         </dependency>
 
     </dependencies>
+
+
 
     <build>
         <plugins>
@@ -88,17 +95,18 @@
                             <headerType>gui</headerType>
                             <outfile>target/MergeSort.exe</outfile>
                             <jar>MergeSort.jar</jar>
-                            <!--icon>src/main/resources/microQR.ico</icon-->
                             <icon>src/main/resources/MergeSortICO.ico</icon>
-                            <!--downloadUrl>https://download.oracle.com/java/17/archive/jdk-17.0.1_windows-x64_bin.msi</downloadUrl-->
                             <downloadUrl>https://download.oracle.com/java/19/archive/jdk-19.0.2_windows-x64_bin.msi</downloadUrl>
                             <errTitle>Launching error</errTitle>
                             <dontWrapJar>true</dontWrapJar>
                             <jre>
-                                <!--path>%PWD%/jre-17.0.1</path-->
-                                <!--path>%ProgramFiles%/Java/jdk-19</path-->
-                                <path>%JAVA_HOME%</path><!--if JDK installed in the system-->
-                                <!--path>../jre</path--><!--if JRE in the folder of programm-->
+                                <!--path>%PWD%/jdk-19.0.2</path--><!--РАБОЧЕЕ. ДОЛЖЕН лежать в этой же папке файл jar-->
+                                <!--path>%cd%/jdk-19.0.2</path--><!--Не заработало на Windows-->
+                                <!--path>../jdk-19.0.2</path--><!--Не заработало на Windows-->
+                                <!--path>%ProgramFiles%/Java/jdk-19</path--><!--Не заработало на Windows-->
+                                <!--path>%JAVA_HOME%</path--><!--РАБОЧЕЕ. ДОЛЖНА быть прописана переменная окружения-->
+
+                                <path>${jre.path.pwd}</path><!--РАБОЧЕЕ. ДОЛЖЕН лежать в этой же папке файл jar-->
 
                                 <!--jdkPreference>preferJdk</jdkPreference-->
                                 <requiresJdk>true</requiresJdk>
@@ -108,8 +116,9 @@
                             <versionInfo>
                                 <fileVersion>0.0.${project.version}</fileVersion>
                                 <txtFileVersion>${project.version}</txtFileVersion>
-                                <!--fileDescription>MergeSort-${project.version}</fileDescription-->
-                                <fileDescription>used Java Home</fileDescription>
+                                
+                                <fileDescription>${jre.path.pwd}</fileDescription>
+
                                 <copyright>Tirskikh Denis</copyright>
                                 <productVersion>0.0.${project.version}</productVersion>
                                 <txtProductVersion>${project.version}</txtProductVersion>
