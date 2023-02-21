@@ -95,7 +95,7 @@
                         <configuration>
                             <headerType>gui</headerType>
                             <outfile>target/MergeSort.exe</outfile>
-                            <jar>target/MergeSort.jar</jar>
+                            <jar>target/MergeSort.jar</jar><!--файл, который будет взят для обёртки в exe. Должен быть создан ДО выполнения package-->
                             <icon>src/main/resources/MergeSortICO.ico</icon>
                             <downloadUrl>${jre.url}</downloadUrl>
                             <errTitle>Launching error</errTitle>
