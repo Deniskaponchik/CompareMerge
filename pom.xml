@@ -31,6 +31,7 @@
         <!--My Variables-->
         <jre.path.pwd>%PWD%/jdk-19.0.2</jre.path.pwd>
         <jre.path.home>%JAVA_HOME%</jre.path.home>
+        <jre.url>https://download.oracle.com/java/19/archive/jdk-19.0.2_windows-x64_bin.msi</jre.url>
     </properties>
 
 
@@ -94,11 +95,11 @@
                         <configuration>
                             <headerType>gui</headerType>
                             <outfile>target/MergeSort.exe</outfile>
-                            <jar>MergeSort.jar</jar>
+                            <jar>target/MergeSort.jar</jar>
                             <icon>src/main/resources/MergeSortICO.ico</icon>
-                            <downloadUrl>https://download.oracle.com/java/19/archive/jdk-19.0.2_windows-x64_bin.msi</downloadUrl>
+                            <downloadUrl>${jre.url}</downloadUrl>
                             <errTitle>Launching error</errTitle>
-                            <dontWrapJar>true</dontWrapJar>
+                            <dontWrapJar>false</dontWrapJar>
                             <jre>
                                 <!--path>%PWD%/jdk-19.0.2</path--><!--РАБОЧЕЕ. ДОЛЖЕН лежать в этой же папке файл jar-->
                                 <!--path>%cd%/jdk-19.0.2</path--><!--Не заработало на Windows-->
@@ -106,7 +107,7 @@
                                 <!--path>%ProgramFiles%/Java/jdk-19</path--><!--Не заработало на Windows-->
                                 <!--path>%JAVA_HOME%</path--><!--РАБОЧЕЕ. ДОЛЖНА быть прописана переменная окружения-->
 
-                                <path>${jre.path.pwd}</path><!--РАБОЧЕЕ. ДОЛЖЕН лежать в этой же папке файл jar-->
+                                <path>${jre.path.pwd}</path><!--РАБОЧЕЕ-->
 
                                 <!--jdkPreference>preferJdk</jdkPreference-->
                                 <requiresJdk>true</requiresJdk>
@@ -116,7 +117,7 @@
                             <versionInfo>
                                 <fileVersion>0.0.${project.version}</fileVersion>
                                 <txtFileVersion>${project.version}</txtFileVersion>
-                                
+
                                 <fileDescription>${jre.path.pwd}</fileDescription>
 
                                 <copyright>Tirskikh Denis</copyright>
